@@ -1,6 +1,6 @@
-import { Image } from "./Image";
+import java.util.*;
 
-export class RealImage extends Image {
+class RealImage extends Image {
     constructor(filename) {
         super();
         this.filename = filename;

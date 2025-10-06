@@ -1,6 +1,5 @@
-import { Image } from "./Image";
-
-export class ProxyImage extends Image {
+import java.util.*;
+class ProxyImage extends Image {
     constructor(filename) {
         super();
         this.realImage = null;
@@ -12,6 +11,5 @@ export class ProxyImage extends Image {
             this.realImage = new RealImage(this.filename);
         }
         this.realImage.display();
-        
     }
 }
